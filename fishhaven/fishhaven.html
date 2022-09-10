@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadway Weather Channel: Preston</title>
+    <meta name="description" content="Preston Idaho's weather on Roadway Weather Channel">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+    <div id="banner">
+        <p>Saturday- Preston Pancakes in the Park! 9:00 am Friday at the city park</p>
+    </div>
+
+    <header>
+        <a href='../home/index.html'><img src="./images/icon.png" alt="Roadway Weather Channel logo"></a>
+        <section class="headings">
+            <h1>Roadway Weather Channel</h1>
+            <div class="subtitle">Safer Travels Ahead</div>
+        </section>
+    </header>
+
+    <nav class="clearfix navigation">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hidden">
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../preston/preston-10.html">Preston</a></li>
+            <li><a href="../sodasprings/sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="../fishhaven/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../stormcenter/storm-center.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Fish Haven</h2>
+        <div class="herostats">
+            <picture>
+                <source srcset="images/heroimgmedium.jpg" media="(min-width: 37.5em) and (max-width: 50em)">
+                <source srcset="images/heroimglargee.jpg" media="(min-width: 50em)">
+                <img class="heroimg" src="./images/heroimgsmall.jpg" alt="hero img">
+            </picture>
+        </div>
+        <section class="stats">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current-condition"></span></p>
+            <p>Current Temp: <span id="current-temp"></span>&deg;F </p>
+            <p> Humidity: <span id="current-humidity"></span>%</p>
+            <p> Wind Speed: <span id="current-windSpeed"></span> mph </p>
+            <p>Wind Chill: <span id="windChill"></span>°F</p>
+        </section>
+        <section>
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id='weekday0'></span></th>
+                    <th><span id='weekday1'></span></th>
+                    <th><span id='weekday2'></span></th>
+                    <th><span id='weekday3'></span></th>
+                    <th><span id='weekday4'></span></th>
+                </tr>
+                <tr>
+                    <td><img id='imgs0'></td>
+                    <td><img id='imgs1'></td>
+                    <td><img id='imgs2'></td>
+                    <td><img id='imgs3'></td>
+                    <td><img id='imgs4'></td>
+                </tr>
+                <tr>
+                    <td><span id='hightemp0'></span></td>
+                    <td><span id='hightemp1'></span></td>
+                    <td><span id='hightemp2'></span></td>
+                    <td><span id='hightemp3'></span></td>
+                    <td><span id='hightemp4'></span></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <div class="events">
+            <h3>Upcoming Events:</h3>
+        </div>
+
+        <section>
+            <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+            <p class="author"><em>Written by: Kurt Friedemann Idaho State Journal</em></p>
+            <img class="cars" src="images/traffic.jpg" alt="cars in traffic">
+
+            <p class="article-text">
+                FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by
+                high desert mountains and bordered by the shores of a vast natural lake.<br>
+
+                In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the
+                summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.<br>
+
+                But they don't live there. It's different living in Fish Haven.<br>
+
+                The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side
+                and the mountains.<br>
+
+                It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the
+                road. But people call it a town even though there isn't a city council, just the Bear Lake County
+                Commission that oversees development there.<br>
+
+                Only 50 to 100 people call it home, depending on the weather.<br>
+
+                Read more at <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents">deseret.com</a>            </p>
+
+
+        </section>
+
+
+        <section class="contact-section">
+            <img class="map" src="images/prestongooglemap.JPG" alt="Google Maps of Preston Idaho">
+            <h5>Contact Information</h5>
+            <div class="contact-text">
+                <p>6516 State St Preston Idaho 83263</p>
+                <p>+1 (208) 569 5214</p>
+                <p>helpcenter@roadwayweatherchannel.com</p>
+
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook-square.png"
+                        alt="facebook icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="social"
+                        src="images/black-instagram.png" alt="instagram icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="social" src="images/twitter-square.png"
+                        alt="twitter icon"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; Copyright <span id="currentYear"></span>| Shayla Dance | <a href='https://www.google.com/'
+                target='_blank'>Terms of Use</a>
+        </p>
+        <a href="https://openweathermap.org/" target='_blank'>Open Weather Map</a>
+        <p>
+            Today's Date: <span id="todayDate"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./javascript/scripts.js"></script>
+    <script src="./javascript/fontload.js"></script>
+    <script src="./javascript/weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadway Weather Channel: Preston</title>
+    <meta name="description" content="Preston Idaho's weather on Roadway Weather Channel">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+    <div id="banner">
+        <p>Saturday- Preston Pancakes in the Park! 9:00 am Friday at the city park</p>
+    </div>
+
+    <header>
+        <a href='../home/index.html'><img src="./images/icon.png" alt="Roadway Weather Channel logo"></a>
+        <section class="headings">
+            <h1>Roadway Weather Channel</h1>
+            <div class="subtitle">Safer Travels Ahead</div>
+        </section>
+    </header>
+
+    <nav class="clearfix navigation">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navMenu" class="hidden">
+            <li><a href="../home/index.html">Home</a></li>
+            <li class="active"><a href="../preston/preston-10.html">Preston</a></li>
+            <li><a href="../sodasprings/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../fishhaven/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../stormcenter/storm-center.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herostats">
+            <picture>
+                <source srcset="images/heroimgmedium.jpg" media="(min-width: 37.5em) and (max-width: 50em)">
+                <source srcset="images/heroimglargee.jpg" media="(min-width: 50em)">
+                <img class="heroimg" src="./images/heroimgsmall.jpg" alt="hero img">
+            </picture>
+        </div>
+        <section class="stats">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current-condition"></span></p>
+            <p>Current Temp: <span id="current-temp"></span>&deg;F </p>
+            <p> Humidity: <span id="current-humidity"></span>%</p>
+            <p> Wind Speed: <span id="current-windSpeed"></span> mph </p>
+            <p>Wind Chill: <span id="windChill"></span>°F</p>
+        </section>
+        <section>
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id='weekday0'></span></th>
+                    <th><span id='weekday1'></span></th>
+                    <th><span id='weekday2'></span></th>
+                    <th><span id='weekday3'></span></th>
+                    <th><span id='weekday4'></span></th>
+                </tr>
+                <tr>
+                    <td><img id='imgs0'></td>
+                    <td><img id='imgs1'></td>
+                    <td><img id='imgs2'></td>
+                    <td><img id='imgs3'></td>
+                    <td><img id='imgs4'></td>
+                </tr>
+                <tr>
+                    <td><span id='hightemp0'></span></td>
+                    <td><span id='hightemp1'></span></td>
+                    <td><span id='hightemp2'></span></td>
+                    <td><span id='hightemp3'></span></td>
+                    <td><span id='hightemp4'></span></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <div class="events">
+            <h3>Upcoming Events:</h3>
+        </div>
+
+        <section>
+            <h3>Idaho Days Returns In Grand Fashion</h3>
+            <p class="author"><em>Written by: Patsy Shipley</em></p>
+            <img class="cars" src="images/traffic.jpg" alt="cars in traffic">
+
+            <p class="article-text">
+                “Spectacular! Historical! Practically perfect in every way!” <br>
+
+                Those are some of the sentiments heard regarding Idaho Days 2021, which was immensely enjoyed by the
+                crows who gathered in Franklin for the traditional celebration. From beginning to end, chairman Nicole
+                Nielson packed in the festivities delighting young and old with down-home Franklin hospitality and
+                entertainment Thursday through Saturday, June 24-26. <br>
+
+                Six-year-old Norah Harrison and her family from Atlanta, Georgia, raced to join the Color Run on
+                Thursday evening, followed by the Box Car Annapolis, where her older brother, Will, sprayed ‘windshield’
+                faces with water in the ‘pit’. Getting a cracker at the pit stop was fun for Norah. “My kids had a
+                wonderful time, and it was so great to see all of the kids have so much fun together,” said their dad,
+                Blake Harrison. As darkness settled in, “The Croods 2” lit up the big screen on Franklin’s city
+                building’s outdoor stage. <br>
+                Read more at: <a href="https://www.hjnews.com/preston/idaho-days-returns-in-grand-fashion/article_1c63b0ed-b9e5-5558-a824-220deba6953e.html">hjnews.com/preston</a>
+            </p>
+
+
+        </section>
+
+
+        <section class="contact-section">
+            <img class="map" src="images/prestongooglemap.JPG" alt="Google Maps of Preston Idaho">
+            <h5>Contact Information</h5>
+            <div class="contact-text">
+                <p>6516 State St Preston Idaho 83263</p>
+                <p>+1 (208) 569 5214</p>
+                <p>helpcenter@roadwayweatherchannel.com</p>
+
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook-square.png"
+                        alt="facebook icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="social"
+                        src="images/black-instagram.png" alt="instagram icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="social" src="images/twitter-square.png"
+                        alt="twitter icon"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; Copyright <span id="currentYear"></span>| Shayla Dance | <a href='https://www.google.com/'
+                target='_blank'>Terms of Use</a>
+        </p>
+        <a href="https://openweathermap.org/" target='_blank'>Open Weather Map</a>
+        <p>
+            Today's Date: <span id="todayDate"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./javascript/scripts.js"></script>
+    <script src="./javascript/fontload.js"></script>
+    <script src="./javascript/weather.js"></script>
+</body>
+
+</html>
